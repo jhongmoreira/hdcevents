@@ -16,6 +16,11 @@
             </div class="form-group">
 
             <div class="form-group">
+                <label for="title">Data do evento:</label>
+                <input type="date" class="form-control" id="date" name="date">
+            </div class="form-group">
+
+            <div class="form-group">
                 <label for="title">Cidade</label>
                 <input type="text" class="form-control" id="city" name="city" placeholder="Local do Evento">
             </div class="form-group">
@@ -26,13 +31,32 @@
                     <option value="0">Não</option>
                     <option value="1">Sim</option>
                 </select>
-            </div class="form-group">
+            </div">
 
             <div class="form-group">
                 <label for="title">Descrição:</label>
-                <textarea name="description" id="description" class="form-control" placeholder="Insira a descrição"></textarea>
-            </div class="form-group">
+                <textarea name="description" id="description" class="form-control" placeholder="O que vai acontecer no evento?"></textarea>
+            </div>
 
+            <div class="form-group">
+                <label for="title">Itens de Infraestrutura</label>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Cadeiras"> Cadeiras
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Palco"> Palco
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Cerveja grátis"> Cerveja Grátis
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Open Food"> Open Food
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="items[]" value="Brindes"> Brindes
+                </div>
+            </div class="form-group">
+                <br>
             <input type="submit" class="btn btn-primary" value="Criar evento">
         </form>
     </div>

@@ -27,8 +27,9 @@
           </form>
         <h3>O evento conta com:</h3>
         <ul id="items-list">
-
-          <li><ion-icon name="play-outline"></ion-icon> <span> Tópico 1</span></li>
+            @foreach($event->items as $item)
+                <li><ion-icon name="play-outline"></ion-icon><span>{{ $item }}</span></li>
+            @endforeach
         </ul>
       </div>
       <div class="col-md-12" id="description-container">
