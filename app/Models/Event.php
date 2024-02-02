@@ -10,7 +10,8 @@ class Event extends Model
     use HasFactory;
 
     protected $casts = [
-        'items' => 'array'
+        'items' => 'array',
+        'date' => 'datetime'
     ];
 
     protected $dates = ['date'];
@@ -18,4 +19,6 @@ class Event extends Model
     public function user(){
         return $this->belongsTo('App\Models\User');
     }
+
+    protected $guarded = [];
 }
